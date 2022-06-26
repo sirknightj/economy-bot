@@ -1,5 +1,6 @@
 import { Client, CommandInteraction, GuildMember, Message, MessageEmbed } from "discord.js";
 import { UnsupportedCommandEmbed } from "../../utils/Replies";
+import { Command } from "../../utils/Types";
 
 module.exports = {
     name: "hello",
@@ -24,4 +25,4 @@ module.exports = {
                 ]});
         }
     }
-};
+} as Command;

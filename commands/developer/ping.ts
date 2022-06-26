@@ -1,4 +1,5 @@
 import { Client, CommandInteraction, Message } from "discord.js";
+import { Command } from "../../utils/Types";
 
 module.exports = {
     name: "ping",
@@ -17,4 +18,4 @@ module.exports = {
             });
         }
     }
-};
+} as Command;
