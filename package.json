@@ -1,0 +1,30 @@
+{
+  "name": "economy-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sirknightj/economy-bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sirknightj/economy-bot/issues"
+  },
+  "homepage": "https://github.com/sirknightj/economy-bot#readme",
+  "dependencies": {
+    "@types/string-similarity": "^4.0.0",
+    "ascii-table": "0.0.9",
+    "cross-fetch": "^3.1.5",
+    "discord.js": "^13.8.1",
+    "glob": "^8.0.3",
+    "string-similarity": "^4.0.4",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.4"
+  }
+}
