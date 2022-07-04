@@ -18,13 +18,16 @@
   },
   "homepage": "https://github.com/sirknightj/economy-bot#readme",
   "dependencies": {
-    "@types/string-similarity": "^4.0.0",
     "ascii-table": "0.0.9",
     "cross-fetch": "^3.1.5",
     "discord.js": "^13.8.1",
+    "fast-levenshtein": "^3.0.0",
     "glob": "^8.0.3",
-    "string-similarity": "^4.0.4",
     "ts-node": "^10.8.1",
     "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "@types/fast-levenshtein": "0.0.2",
+    "@types/glob": "^7.2.0"
   }
 }

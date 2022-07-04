@@ -9,7 +9,9 @@ const client: Bot = new Discord.Client({
 
 client.commands = new Collection();
 
-require("./handlers/events")(client);
-require("./handlers/commands")(client);
+import eventHandler from "./handlers/events";
+eventHandler(client);
+import commandHandler from "./handlers/commands";
+commandHandler(client);
 
 client.login(CONFIG.token);

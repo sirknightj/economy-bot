@@ -2,10 +2,11 @@ import { Client, CommandInteraction, GuildMember, Message, MessageEmbed } from "
 import { UnsupportedCommandEmbed } from "../../utils/Replies";
 import { Command } from "../../utils/Types";
 
-module.exports = {
+export default {
     name: "hello",
     description: "Says hello.",
     permissions: "ADMINISTRATOR",
+    enabled: true,
 
     execute: async (bot: Client, message: Message, interaction: CommandInteraction) => {
         if (message) {

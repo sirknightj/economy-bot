@@ -1,4 +1,5 @@
 {
     "token": "YOUR BOT TOKEN HERE",
-    "hypixelApiKey": "YOUR HYPIXEL API KEY HERE"
+    "hypixelApiKey": "YOUR HYPIXEL API KEY HERE",
+    "testServerID": "000000000000000000"
 }

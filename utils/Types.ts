@@ -1,4 +1,4 @@
-import { Client, Collection, ApplicationCommand, Message, CommandInteraction, AutocompleteInteraction } from "discord.js";
+import { Client, Collection, ApplicationCommandOptionData, Message, CommandInteraction, AutocompleteInteraction } from "discord.js";
 
 export interface Bot extends Client {
     commands: Collection<string, any>;
@@ -7,8 +7,15 @@ export interface Bot extends Client {
 export interface Command {
     name: string;
     description: string;
+	options?: ApplicationCommandOptionData[];
+	enabled: boolean;
     permissions?: string | string[];
-    init?: () => Promise<void>;
+	aliases?: string[];
+	/**
+	 * Function to be called when the command is initially loaded.
+	 * If successful, returns void (nothing). If a failure occurs, returns an error message.
+	 */
+    init?: () => Promise<string | void>;
     execute: (client: Bot, message: Message, interaction: CommandInteraction) => Promise<void>;
     handleAutocomplete?: (client: Bot, interaction: AutocompleteInteraction) => Promise<void>;
 };

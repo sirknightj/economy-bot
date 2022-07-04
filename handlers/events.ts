@@ -1,8 +1,8 @@
 import Discord from 'discord.js';
 import { Bot } from '../utils/Types';
-const { events } = require("../utils/EventNames");
-const { promisify } = require("util");
-const { glob } = require("glob");
+import { events } from "../utils/EventNames.json";
+import { promisify } from "node:util";
+import { glob } from "glob";
 const PG = promisify(glob);
 const Ascii = require("ascii-table");
 
@@ -10,7 +10,7 @@ const Ascii = require("ascii-table");
  * Load all of the event handlers.
  * @param {Bot} client the bot that's listening to the events
  */
-module.exports = async (client: Bot) => {
+export default async (client: Bot) => {
     // Initialize a table of the events that we are loading.
     // Each table row contains the event name, and whether or not it was successfully loaded.
     const table = new Ascii("Events Loaded");
